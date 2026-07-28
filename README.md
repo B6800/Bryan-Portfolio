@@ -83,8 +83,8 @@ src/
 ### Installation
 
 ```bash
-git clone https://github.com/B6800/Portfolio1.git
-cd Portfolio1
+git clone https://github.com/B6800/Bryan-Portfolio.git
+cd Bryan-Portfolio
 npm ci
 npm run dev
 ```
