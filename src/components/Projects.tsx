@@ -8,6 +8,8 @@ import ecommerceImg from "@/assets/project-ecommerce.jpg";
 import microbloggingImg from "@/assets/Microblogging.png";
 // @ts-ignore
 import bankingImg from "@/assets/project-banking-dashboard.png";
+// @ts-ignore
+import revenueLensImg from "@/assets/project-revenue-lens.png";
 
 const Projects = () => {
   const projects = [
@@ -22,7 +24,7 @@ const Projects = () => {
       featured: true
     },
     {
-      rank: 3,
+      rank: 4,
       title: "Banking System",
       description: "A C-based banking application for account management, transfers, balance sorting, and persistent file-based data storage.",
       image: bankingImg,
@@ -33,7 +35,7 @@ const Projects = () => {
       featured: true
     },
     {
-      rank: 2,
+      rank: 3,
       title: "Microblogging Platform",
       description: "Completed full-stack platform for posts, comments, likes, and profiles, with Docker, GitHub Actions CI/CD, AWS EC2, Nginx, and MariaDB deployment architecture.",
       image: microbloggingImg,
@@ -41,6 +43,17 @@ const Projects = () => {
       liveUrl: null,
       demoLabel: "Deployment paused",
       githubUrl: "https://github.com/B6800/Blogging",
+      featured: true
+    },
+    {
+      rank: 2,
+      title: "Revenue Lens",
+      description: "A retail intelligence dashboard that turns transaction data into revenue insights, product performance metrics, customer retention signals, and anomaly review queues.",
+      image: revenueLensImg,
+      technologies: ["Python", "FastAPI", "pandas", "scikit-learn", "Vercel"],
+      liveUrl: null,
+      demoLabel: "Dashboard link pending",
+      githubUrl: "https://github.com/B6800/revenue-lens",
       featured: true
     },
   ];
