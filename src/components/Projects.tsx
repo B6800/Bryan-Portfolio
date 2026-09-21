@@ -51,8 +51,7 @@ const Projects = () => {
       description: "A retail intelligence dashboard that turns transaction data into revenue insights, product performance metrics, customer retention signals, and anomaly review queues.",
       image: revenueLensImg,
       technologies: ["Python", "FastAPI", "pandas", "scikit-learn", "Vercel"],
-      liveUrl: null,
-      demoLabel: "Dashboard link pending",
+      liveUrl: "https://revenue-h2y5-phi.vercel.app/",
       githubUrl: "https://github.com/B6800/revenue-lens",
       featured: true
     },
