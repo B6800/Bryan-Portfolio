@@ -29,7 +29,7 @@ const Hero = () => {
             </Button>
             </a>
             <a
-                href="\src\CV_Updated___.pdf"
+                href="\src\CV_Updated__.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
