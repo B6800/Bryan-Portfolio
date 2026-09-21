@@ -5,37 +5,42 @@ import { ExternalLink, Github } from "lucide-react";
 // @ts-ignore
 import ecommerceImg from "@/assets/project-ecommerce.jpg";
 // @ts-ignore
-import taskManagerImg from "@/assets/project-taskmanager.jpg";
-// @ts-ignore
 import microbloggingImg from "@/assets/Microblogging.png";
+// @ts-ignore
+import bankingImg from "@/assets/project-banking-dashboard.png";
 
 const Projects = () => {
   const projects = [
     {
+      rank: 1,
       title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Springboot, and Stripe integration. Features include real-time inventory, admin dashboard, and mobile-responsive design.",
+      description: "A responsive React e-commerce application with Supabase data services, Stripe integration, and an admin-focused shopping experience.",
       image: ecommerceImg,
-      technologies: ["React", "Springboot", "MariaDb", "Stripe", "Superbase","Tailwind CSS"],
+      technologies: ["React", "TypeScript", "Supabase", "Stripe", "Tailwind CSS"],
       liveUrl: "https://e-com.bakwowi.dev/",
-      githubUrl: "https://github.com/B6800/E-Commerce.git",
+      githubUrl: "https://github.com/B6800/E-Commerce",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: taskManagerImg,
-      technologies: ["Vue.js", "Superbase", "Vuetify", "PWA"],
-      liveUrl: "#",
-      githubUrl: "#",
+      rank: 3,
+      title: "Banking System",
+      description: "A C-based banking application for account management, transfers, balance sorting, and persistent file-based data storage.",
+      image: bankingImg,
+      technologies: ["C", "File I/O", "Data Persistence", "Algorithms"],
+      liveUrl: null,
+      demoLabel: "No live demo",
+      githubUrl: "https://github.com/B6800/Banking-System",
       featured: true
     },
     {
-      title: "Microblogging  App",
-      description:  "A full-stack microblogging platform that allows users to create posts, interact through comments and likes, and manage profiles. Built with React and Spring Boot for a seamless, responsive experience.",
+      rank: 2,
+      title: "Microblogging Platform",
+      description: "Completed full-stack platform for posts, comments, likes, and profiles, with Docker, GitHub Actions CI/CD, AWS EC2, Nginx, and MariaDB deployment architecture.",
       image: microbloggingImg,
-      technologies: ["SpringBoot", "React"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/B6800/Blogging.git",
+      technologies: ["React", "Spring Boot", "MariaDB", "Docker", "GitHub Actions", "AWS EC2", "Nginx"],
+      liveUrl: null,
+      demoLabel: "Deployment paused",
+      githubUrl: "https://github.com/B6800/Blogging",
       featured: true
     },
   ];
@@ -54,7 +59,7 @@ const Projects = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {[...projects].sort((a, b) => a.rank - b.rank).map((project, index) => (
             <Card 
               key={index} 
               className={`card-gradient border-border transition-smooth hover:glow-primary animate-fade-in-up group ${
@@ -114,7 +119,7 @@ const Projects = () => {
                   ) : (
                       <Button size="sm" variant="default" className="flex-1" disabled>
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Still in Progress
+                        {project.demoLabel ?? "Live demo unavailable"}
                       </Button>
                   )}
 
@@ -138,9 +143,11 @@ const Projects = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="transition-bounce hover:scale-105">
-            View All Projects
-          </Button>
+          <a href="https://github.com/B6800?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" size="lg" className="transition-bounce hover:scale-105">
+              View All Projects
+            </Button>
+          </a>
         </div>
       </div>
     </section>
