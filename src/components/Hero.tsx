@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Download, Github, Linkedin, Mail } from "lucide-react";
+import cvUrl from "@/CV_Updated___.pdf";
 
 const Hero = () => {
   return (
@@ -29,10 +30,8 @@ const Hero = () => {
             </Button>
             </a>
             <a
-                href="\src\CV_Updated__.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                download
+                href={cvUrl}
+                download="Bakwowi-Bryan-CV.pdf"
             >
             <Button  variant="outline" size="lg" className="transition-bounce hover:scale-105">
               <Download  className="mr-2 h-5 w-5" />
