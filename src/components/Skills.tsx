@@ -52,9 +52,6 @@ const Skills = () => {
 
   const certifications = [
     "AWS Certified Cloud Practitioner",
-    "AI ENGINEER FOR DEVELOPERS ASSOCIATE"//"Data Analytics in Python","Advanced Testing Practices Using DevOps Tools"
-
-
 
   ];
 
