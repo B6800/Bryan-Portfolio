@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Code2, Palette, Rocket, Users } from "lucide-react";
+import { BriefcaseBusiness, Code2, Coffee, GraduationCap, MapPin, Palette, Rocket, Users } from "lucide-react";
 
 const About = () => {
   const highlights = [
@@ -63,11 +63,11 @@ const About = () => {
           <div className="card-gradient rounded-lg p-8 animate-fade-in-up border border-border">
             <h4 className="text-lg font-semibold mb-4">Quick Facts</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>🌍 Based in Regensburg, GE</li>
-              <li>💼 1+ years of professional experience</li>
-              <li>🎓 Computer Science & Design background</li>
-              <li>🚀 10+ successful projects delivered</li>
-              <li>☕ Powered by Challenges and curiosity</li>
+              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" />Based in Regensburg, GE</li>
+              <li className="flex items-center gap-2"><BriefcaseBusiness className="h-4 w-4 text-primary" />1+ years of professional experience</li>
+              <li className="flex items-center gap-2"><GraduationCap className="h-4 w-4 text-primary" />Computer Science & Design background</li>
+              <li className="flex items-center gap-2"><Rocket className="h-4 w-4 text-primary" />10+ successful projects delivered</li>
+              <li className="flex items-center gap-2"><Coffee className="h-4 w-4 text-primary" />Powered by Challenges and curiosity</li>
             </ul>
           </div>
         </div>
