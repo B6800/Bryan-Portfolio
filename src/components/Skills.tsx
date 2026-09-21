@@ -52,7 +52,15 @@ const Skills = () => {
 
   const certifications = [
     "AWS Certified Cloud Practitioner",
-
+    "AI Engineer for Data Scientists Associate — DataCamp",
+    "AWS Course Completion",
+    "Advanced Testing Practices Using DevOps Tools",
+    "Google Cloud Engineering Certificate",
+    "Azure Basics — DataCamp",
+    "Data Analytics in Python — DataCamp",
+    "Developing AI Systems with OpenAI — DataCamp",
+    "Prompt Engineering with OpenAI — DataCamp",
+    "Understanding AI — DataCamp",
   ];
 
   const technologies = [
