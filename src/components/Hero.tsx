@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import cvUrl from "@/CV_Updated___.pdf";
-import profileUrl from "@/Profpic.jpg";
+import profileUrl from "@/Profpic.jpeg";
 
 const Hero = () => {
   return (
