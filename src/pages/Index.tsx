@@ -15,7 +15,14 @@ const Index = () => {
       <Skills />
       <Contact />
       
+      <footer className="py-8 px-6 border-t border-border bg-muted/10">
+        <div className="container mx-auto text-center">
+          <p className="text-muted-foreground">
+            © 2025 Bakwowi Bryan.
+          </p>
 
+        </div>
+      </footer>
     </div>
   );
 };
