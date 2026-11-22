@@ -15,16 +15,7 @@ const Index = () => {
       <Skills />
       <Contact />
       
-      <footer className="py-8 px-6 border-t border-border bg-muted/10">
-        <div className="container mx-auto text-center">
-          <p className="text-muted-foreground">
-            © 2025 Bakwowi Bryan. Built  using React, TypeScript, and Tailwind CSS.
-          </p>
-          <p className="text-sm text-muted-foreground mt-2">
-            Crafted with attention to detail and passion for great design.
-          </p>
-        </div>
-      </footer>
+
     </div>
   );
 };
