@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Download, Github, Linkedin, Mail } from "lucide-react";
-import cvUrl from "@/CV_Updated___.pdf";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import cvUrl from "@/Bakwowi_Bryan_Cv.pdf";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import profileUrl from "@/Profpic.jpeg";
 
 const Hero = () => {
